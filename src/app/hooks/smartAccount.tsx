@@ -52,7 +52,7 @@ export function useSmartAccount() {
                     transport: bundlerTransport,
                     entryPoint: ENTRYPOINT_ADDRESS_V06,
                 });
-                const jiffyPaymaster = new JiffyPaymaster(bundlerUrl, selectedChain.chain.id, {
+                const jiffyPaymaster = new JiffyPaymaster('https://paymaster.jiffyscan.xyz', selectedChain.chain.id, {
                     "x-api-key": jiffyscanKey,
                 });
 
